@@ -1,0 +1,1442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>801</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #1e1e1e;
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QPushButton" name="btn_sobre">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>30</y>
+        <width>131</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 2px solid #5e5e5e;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-family: 'Segoe UI';
+    font-size: 12pt;
+}
+
+QPushButton:hover {
+    background-color: #3e3e3e;
+}
+
+QPushButton:pressed {
+    background-color: #242424;
+}</string>
+      </property>
+      <property name="text">
+       <string>Sobre</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>160</y>
+        <width>221</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QComboBox {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 1px solid #3a3a3a;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+QComboBox:hover {
+    border: 1px solid #5a5a5a;
+}
+
+QComboBox::drop-down {
+    background-color: #2d2d2d;
+    border-left: 1px solid #3a3a3a;
+}</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>160</y>
+        <width>181</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    color: #dcdcdc;
+    font-size: 14pt;
+    font-family: 'Segoe UI';
+}</string>
+      </property>
+      <property name="text">
+       <string>Porta do arduino:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_conectar">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>250</y>
+        <width>191</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 2px solid #5e5e5e;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-family: 'Segoe UI';
+    font-size: 16pt;
+}
+
+QPushButton:hover {
+    background-color: #3e3e3e;
+}
+
+QPushButton:pressed {
+    background-color: #242424;
+}</string>
+      </property>
+      <property name="text">
+       <string>Conectar</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>40</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    color: #dcdcdc;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI';
+}</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Conexão com o Arduino&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_6">
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>180</y>
+        <width>161</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 2px solid #5e5e5e;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-family: 'Segoe UI';
+    font-size: 12pt;
+}
+
+QPushButton:hover {
+    background-color: #3e3e3e;
+}
+
+QPushButton:pressed {
+    background-color: #242424;
+}</string>
+      </property>
+      <property name="text">
+       <string>Manual</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="geometry">
+       <rect>
+        <x>432</x>
+        <y>180</y>
+        <width>161</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 2px solid #5e5e5e;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-family: 'Segoe UI';
+    font-size: 12pt;
+}
+
+QPushButton:hover {
+    background-color: #3e3e3e;
+}
+
+QPushButton:pressed {
+    background-color: #242424;
+}</string>
+      </property>
+      <property name="text">
+       <string>Automático</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_voltarINICIO">
+      <property name="geometry">
+       <rect>
+        <x>562</x>
+        <y>477</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 2px solid #5e5e5e;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-family: 'Segoe UI';
+    font-size: 12pt;
+}
+
+QPushButton:hover {
+    background-color: #3e3e3e;
+}
+
+QPushButton:pressed {
+    background-color: #242424;
+}</string>
+      </property>
+      <property name="text">
+       <string>Voltar</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>40</y>
+        <width>311</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    color: #dcdcdc;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI';
+}</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Escolha o modo de controle&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QWidget" name="gridLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>70</y>
+        <width>531</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="1">
+        <widget class="QPushButton" name="btn_garraAbrir">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 2px solid #5e5e5e;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-family: 'Segoe UI';
+    font-size: 12pt;
+}
+
+QPushButton:hover {
+    background-color: #3e3e3e;
+}
+
+QPushButton:pressed {
+    background-color: #242424;
+}</string>
+         </property>
+         <property name="text">
+          <string>←</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_8">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #dcdcdc;
+    font-size: 14pt;
+    font-family: 'Segoe UI';
+}</string>
+         </property>
+         <property name="text">
+          <string>Giro do Pulso:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="btn_garraFechar">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 2px solid #5e5e5e;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-family: 'Segoe UI';
+    font-size: 12pt;
+}
+
+QPushButton:hover {
+    background-color: #3e3e3e;
+}
+
+QPushButton:pressed {
+    background-color: #242424;
+}</string>
+         </property>
+         <property name="text">
+          <string>→</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="btn_pulsoAntiHora">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 2px solid #5e5e5e;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-family: 'Segoe UI';
+    font-size: 12pt;
+}
+
+QPushButton:hover {
+    background-color: #3e3e3e;
+}
+
+QPushButton:pressed {
+    background-color: #242424;
+}</string>
+         </property>
+         <property name="text">
+          <string>←</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="btn_pulsoHora">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 2px solid #5e5e5e;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-family: 'Segoe UI';
+    font-size: 12pt;
+}
+
+QPushButton:hover {
+    background-color: #3e3e3e;
+}
+
+QPushButton:pressed {
+    background-color: #242424;
+}</string>
+         </property>
+         <property name="text">
+          <string>→</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="2">
+        <widget class="QPushButton" name="btn_linhaDireita">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 2px solid #5e5e5e;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-family: 'Segoe UI';
+    font-size: 12pt;
+}
+
+QPushButton:hover {
+    background-color: #3e3e3e;
+}
+
+QPushButton:pressed {
+    background-color: #242424;
+}</string>
+         </property>
+         <property name="text">
+          <string>→</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QPushButton" name="btn_cotoveloTras">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 2px solid #5e5e5e;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-family: 'Segoe UI';
+    font-size: 12pt;
+}
+
+QPushButton:hover {
+    background-color: #3e3e3e;
+}
+
+QPushButton:pressed {
+    background-color: #242424;
+}</string>
+         </property>
+         <property name="text">
+          <string>←</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #dcdcdc;
+    font-size: 14pt;
+    font-family: 'Segoe UI';
+}</string>
+         </property>
+         <property name="text">
+          <string>Movimento do Pulso:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QPushButton" name="btn_pulsoFrente">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 2px solid #5e5e5e;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-family: 'Segoe UI';
+    font-size: 12pt;
+}
+
+QPushButton:hover {
+    background-color: #3e3e3e;
+}
+
+QPushButton:pressed {
+    background-color: #242424;
+}</string>
+         </property>
+         <property name="text">
+          <string>→</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="btn_pulsoTras">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 2px solid #5e5e5e;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-family: 'Segoe UI';
+    font-size: 12pt;
+}
+
+QPushButton:hover {
+    background-color: #3e3e3e;
+}
+
+QPushButton:pressed {
+    background-color: #242424;
+}</string>
+         </property>
+         <property name="text">
+          <string>←</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #dcdcdc;
+    font-size: 14pt;
+    font-family: 'Segoe UI';
+}</string>
+         </property>
+         <property name="text">
+          <string>Cotovelo:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #dcdcdc;
+    font-size: 14pt;
+    font-family: 'Segoe UI';
+}</string>
+         </property>
+         <property name="text">
+          <string>Garra:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #dcdcdc;
+    font-size: 14pt;
+    font-family: 'Segoe UI';
+}</string>
+         </property>
+         <property name="text">
+          <string>Ombro:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QPushButton" name="btn_ombroTras">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 2px solid #5e5e5e;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-family: 'Segoe UI';
+    font-size: 12pt;
+}
+
+QPushButton:hover {
+    background-color: #3e3e3e;
+}
+
+QPushButton:pressed {
+    background-color: #242424;
+}</string>
+         </property>
+         <property name="text">
+          <string>→</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_7">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #dcdcdc;
+    font-size: 14pt;
+    font-family: 'Segoe UI';
+}</string>
+         </property>
+         <property name="text">
+          <string>Linha transversal:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QPushButton" name="btn_linhaEsquerda">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 2px solid #5e5e5e;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-family: 'Segoe UI';
+    font-size: 12pt;
+}
+
+QPushButton:hover {
+    background-color: #3e3e3e;
+}
+
+QPushButton:pressed {
+    background-color: #242424;
+}</string>
+         </property>
+         <property name="text">
+          <string>←</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QPushButton" name="btn_cotoveloFrente">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 2px solid #5e5e5e;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-family: 'Segoe UI';
+    font-size: 12pt;
+}
+
+QPushButton:hover {
+    background-color: #3e3e3e;
+}
+
+QPushButton:pressed {
+    background-color: #242424;
+}</string>
+         </property>
+         <property name="text">
+          <string>→</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QPushButton" name="btn_baseAntiHora">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 2px solid #5e5e5e;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-family: 'Segoe UI';
+    font-size: 12pt;
+}
+
+QPushButton:hover {
+    background-color: #3e3e3e;
+}
+
+QPushButton:pressed {
+    background-color: #242424;
+}</string>
+         </property>
+         <property name="text">
+          <string>←</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    color: #dcdcdc;
+    font-size: 14pt;
+    font-family: 'Segoe UI';
+}</string>
+         </property>
+         <property name="text">
+          <string>Base:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QPushButton" name="btn_baseHora">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 2px solid #5e5e5e;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-family: 'Segoe UI';
+    font-size: 12pt;
+}
+
+QPushButton:hover {
+    background-color: #3e3e3e;
+}
+
+QPushButton:pressed {
+    background-color: #242424;
+}</string>
+         </property>
+         <property name="text">
+          <string>→</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QPushButton" name="btn_ombroFrente">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 2px solid #5e5e5e;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-family: 'Segoe UI';
+    font-size: 12pt;
+}
+
+QPushButton:hover {
+    background-color: #3e3e3e;
+}
+
+QPushButton:pressed {
+    background-color: #242424;
+}</string>
+         </property>
+         <property name="text">
+          <string>←</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QPushButton" name="btn_resetar">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 2px solid #5e5e5e;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-family: 'Segoe UI';
+    font-size: 12pt;
+}
+
+QPushButton:hover {
+    background-color: #3e3e3e;
+}
+
+QPushButton:pressed {
+    background-color: #242424;
+}</string>
+         </property>
+         <property name="text">
+          <string>Resetar</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="2">
+        <widget class="QPushButton" name="btn_voltar">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 2px solid #5e5e5e;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-family: 'Segoe UI';
+    font-size: 12pt;
+}
+
+QPushButton:hover {
+    background-color: #3e3e3e;
+}
+
+QPushButton:pressed {
+    background-color: #242424;
+}</string>
+         </property>
+         <property name="text">
+          <string>Voltar</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>20</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    color: #dcdcdc;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI';
+}</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Controle Manual&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QPlainTextEdit" name="plainTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>341</width>
+        <height>541</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPlainTextEdit {
+    background-color: #111111;      /* fundo escuro, combina com o resto da tela */
+    color: #ffffff;                 /* texto branco */
+    border: 1px solid #3a3a3a;      /* borda sutil e técnica */
+    border-radius: 6px;             /* cantos levemente arredondados */
+    font-family: 'Consolas';        /* fonte técnica tipo terminal */
+    font-size: 12pt;                /* tamanho legível */
+    padding: 6px;                   /* espaço interno para o texto não encostar nas bordas */
+}
+
+QPlainTextEdit:focus {
+    border: 1px solid #8ab4f8;      /* destaque azul quando selecionado */
+    background-color: #1a1a1a;      /* leve mudança no foco */
+}</string>
+      </property>
+      <property name="plainText">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>60</y>
+        <width>401</width>
+        <height>46</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="btn_salvar">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 2px solid #5e5e5e;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-family: 'Segoe UI';
+    font-size: 12pt;
+}
+
+QPushButton:hover {
+    background-color: #3e3e3e;
+}
+
+QPushButton:pressed {
+    background-color: #242424;
+}</string>
+         </property>
+         <property name="text">
+          <string>Salvar</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_carregar">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 2px solid #5e5e5e;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-family: 'Segoe UI';
+    font-size: 12pt;
+}
+
+QPushButton:hover {
+    background-color: #3e3e3e;
+}
+
+QPushButton:pressed {
+    background-color: #242424;
+}</string>
+         </property>
+         <property name="text">
+          <string>Carregar</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_executar">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 2px solid #5e5e5e;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-family: 'Segoe UI';
+    font-size: 12pt;
+}
+
+QPushButton:hover {
+    background-color: #3e3e3e;
+}
+
+QPushButton:pressed {
+    background-color: #242424;
+}</string>
+         </property>
+         <property name="text">
+          <string>Executar</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_ajuda">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 2px solid #5e5e5e;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-family: 'Segoe UI';
+    font-size: 12pt;
+}
+
+QPushButton:hover {
+    background-color: #3e3e3e;
+}
+
+QPushButton:pressed {
+    background-color: #242424;
+}</string>
+         </property>
+         <property name="text">
+          <string>Ajuda</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>450</y>
+        <width>195</width>
+        <height>46</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QPushButton" name="btn_resetar_2">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 2px solid #5e5e5e;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-family: 'Segoe UI';
+    font-size: 12pt;
+}
+
+QPushButton:hover {
+    background-color: #3e3e3e;
+}
+
+QPushButton:pressed {
+    background-color: #242424;
+}</string>
+         </property>
+         <property name="text">
+          <string>Resetar</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_voltar2">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 2px solid #5e5e5e;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-family: 'Segoe UI';
+    font-size: 12pt;
+}
+
+QPushButton:hover {
+    background-color: #3e3e3e;
+}
+
+QPushButton:pressed {
+    background-color: #242424;
+}</string>
+         </property>
+         <property name="text">
+          <string>Voltar</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>20</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    color: #dcdcdc;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI';
+}</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Controle automático&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_4">
+     <widget class="QTextBrowser" name="textBrowser_5">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>50</y>
+        <width>571</width>
+        <height>491</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTextBrowser {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 2px solid #3a3a3a;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: &quot;Segoe UI&quot;;
+    font-size: 12pt;
+}</string>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;- BXX Movimento da base&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;- OXX Movimento do ombro&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;- CXX Movimento do cotovelo&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;- MPXX Movimento do pulso&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;- GPXX Giro do pulso&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;- GXX Abrir e fechar garra&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;- LTXX Linha tranversal&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;- Z retornar pra posição zero&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_voltar3">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>490</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 2px solid #5e5e5e;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-family: 'Segoe UI';
+    font-size: 12pt;
+}
+
+QPushButton:hover {
+    background-color: #3e3e3e;
+}
+
+QPushButton:pressed {
+    background-color: #242424;
+}</string>
+      </property>
+      <property name="text">
+       <string>Voltar</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>10</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    color: #dcdcdc;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI';
+}</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Comandos&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_5">
+     <widget class="QTextBrowser" name="textBrowser_6">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>50</y>
+        <width>661</width>
+        <height>471</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTextBrowser {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 2px solid #3a3a3a;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: &quot;Segoe UI&quot;;
+    font-size: 12pt;
+}</string>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;Interface de controle de braço robótico criado para trabalho de conclusão de curso do ano de 2025 do Colégio Técnico Industrial de Guaratinguetá Professor Carlos Augusto Patrício Amorim.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;Criadores: Caio Vianna Guimarães Galvão, Clara Fernandes de Oliveira, Davi Nascimento Gomes, Jõao Luis Garufe Coelho e João Pedro Soares.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;Alunos do curso de automação industrial&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_voltar4">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>460</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 2px solid #5e5e5e;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-family: 'Segoe UI';
+    font-size: 12pt;
+}
+
+QPushButton:hover {
+    background-color: #3e3e3e;
+}
+
+QPushButton:pressed {
+    background-color: #242424;
+}</string>
+      </property>
+      <property name="text">
+       <string>Voltar</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>10</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    color: #dcdcdc;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI';
+}</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Sobre&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
